@@ -40,6 +40,6 @@ jobs:
       - name: List
         run: |
           mv operator-charts/charts ./
-          cp -r platform-charts/ ./charts
-          tree
+          cp -r platform-charts/hivemq-platform-* ./charts
+          tree ./charts
 
