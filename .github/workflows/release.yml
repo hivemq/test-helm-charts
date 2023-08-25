@@ -24,11 +24,22 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
+        with:
+          sparse-checkout: charts
+          fetch-depth: 0
       - name: Checkout helm-charts
         uses: actions/checkout@v3
         with:
           repository: hivemq/helm-charts
-          fetch-depth: 0
+      - name: Checkout hivemq-platform-helm-charts
+        uses: actions/checkout@v3
+        with:
+          sparse-checkout: |
+            hivemq-platform-operator
+            hivemq-platform
+          repository: hivemq/helm-charts
+          path: charts/
+          token: ${{ secrets.JENKINS_TOKEN }}
       # Runs a single command using the runners shell
       - name: List
         run: tree
