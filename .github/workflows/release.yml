@@ -25,7 +25,6 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v3
         with:
-          sparse-checkout: charts
           fetch-depth: 0
       - name: Checkout helm-charts
         uses: actions/checkout@v3
@@ -34,9 +33,6 @@ jobs:
       - name: Checkout hivemq-platform-helm-charts
         uses: actions/checkout@v3
         with:
-          sparse-checkout: |
-            hivemq-platform-operator
-            hivemq-platform
           repository: hivemq/helm-charts
           path: charts/
           token: ${{ secrets.JENKINS_TOKEN }}
