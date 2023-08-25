@@ -55,6 +55,20 @@ jobs:
         uses: azure/setup-helm@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Update Helm Dependencies
+        run: |
+          set -ex
+          echo '${{ steps.charts.outputs.charts }}' \
+          | yq --indent 0 --no-colors --input-format json --unwrapScalar '.[]' \
+          | while read -r dir; do
+              helm dependency update $dir;
+              if [ -f "$dir/Chart.lock" ]; then
+                yq --indent 0 \
+                  '.dependencies | map(["helm", "repo", "add", .name, .repository] | join(" ")) | .[]' \
+                  "$dir/Chart.lock" \
+                | sh --;
+              fi
+            done
       - name: Package Charts
         id: package
         run: |
