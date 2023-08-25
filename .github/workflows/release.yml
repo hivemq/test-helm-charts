@@ -55,7 +55,17 @@ jobs:
         uses: azure/setup-helm@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-      - name: Update Helm Dependencies
+      - name: List charts
+        id: charts
+        run: |
+          set -e
+          find -L charts -mindepth 2 -maxdepth 2 -type f \( -name 'Chart.yaml' -o -name 'Chart.yml' \) -exec dirname "{}" \; \
+          | sort -u \
+          | sed -E 's/^/- /' \
+          | yq --no-colors --indent 0 --output-format json '.' \
+          | sed -E 's/^/charts=/' >> $GITHUB_OUTPUT
+
+      - name: Update Charts Helm Dependencies
         run: |
           set -ex
           echo '${{ steps.charts.outputs.charts }}' \
