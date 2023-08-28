@@ -1,0 +1,8 @@
+title: HiveMQ Helm-Charts
+description: HiveMQ Helm-Charts
+logo: assets/images/02-hivemq-neg.svg
+
+remote_theme: SgtSilvio/just-the-docs@3e0de1c7
+color_scheme: dark
+
+permalink: pretty
