@@ -14,7 +14,7 @@ helm upgrade --install hivemq-platform-operator test-hivemq/hivemq-platform-oper
 This will install a Hivemq Platform with 2 nodes for evaluation.
 ```
 helm upgrade --install hivemq-platform test-hivemq/hivemq-platform
-
+```
 ## Install the HiveMQ operator
 
 This will install the HiveMQ operator as well as a custom resource that deploys a small 3-node evaluation cluster by default.
