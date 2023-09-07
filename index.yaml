@@ -2,6 +2,28 @@ apiVersion: v1
 entries:
   hivemq-operator:
   - apiVersion: v2
+    appVersion: 4.19.0
+    created: "2023-09-07T12:18:16.113455058Z"
+    dependencies:
+    - condition: monitoring.dedicated, monitoring.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 30.*
+    description: Operator for the HiveMQ MQTT broker
+    digest: 15756a8bb540cd42ca84d50aa3b771eb6c50cc45c0dbfdc69ae54e15beaddb0b
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    name: hivemq-operator
+    type: application
+    urls:
+    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-operator-0.11.25/hivemq-operator-0.11.25.tgz
+    version: 0.11.25
+  - apiVersion: v2
     appVersion: 4.18.0
     created: "2023-08-25T12:38:19.089519335Z"
     dependencies:
@@ -24,6 +46,27 @@ entries:
     - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-operator-0.11.24/hivemq-operator-0.11.24.tgz
     version: 0.11.24
   hivemq-platform:
+  - apiVersion: v2
+    appVersion: 4.19.0
+    created: "2023-09-07T12:18:16.173268373Z"
+    description: Helm chart of a HiveMQ platform for the HiveMQ Operator
+    digest: 1533c5d581b8246eb149497055a8987b202c109c3cfb911660552d968c1fcd24
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - HiveMQ Platform
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    maintainers:
+    - email: support@hivemq.com
+      name: HiveMQ
+    name: hivemq-platform
+    type: application
+    urls:
+    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-0.1.1/hivemq-platform-0.1.1.tgz
+    version: 0.1.1
   - apiVersion: v2
     appVersion: 4.18.0
     created: "2023-08-25T12:38:19.212760197Z"
@@ -48,6 +91,27 @@ entries:
   hivemq-platform-operator:
   - apiVersion: v2
     appVersion: 0.9.0
+    created: "2023-09-07T12:18:16.235576403Z"
+    description: Helm chart of the HiveMQ Platform Operator for HiveMQ Platforms
+    digest: dfef28fd75167ddb796a6a8b6a0dd933aad5fb8fff22775587c4e2493ebb901e
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    - Operator
+    maintainers:
+    - email: support@hivemq.com
+      name: HiveMQ
+    name: hivemq-platform-operator
+    type: application
+    urls:
+    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-operator-0.1.1/hivemq-platform-operator-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.9.0
     created: "2023-08-25T12:38:19.330569283Z"
     description: Helm chart of the HiveMQ Platform Operator for HiveMQ Platforms
     digest: 0b04e15418567c06d02ef25d53d283a83c7942d3adee90b98e20d1d179b57820
@@ -68,6 +132,28 @@ entries:
     - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-operator-0.1.0/hivemq-platform-operator-0.1.0.tgz
     version: 0.1.0
   hivemq-swarm:
+  - apiVersion: v2
+    appVersion: 4.19.0
+    created: "2023-09-07T12:18:16.353523926Z"
+    dependencies:
+    - condition: monitoring.dedicated, monitoring.enabled
+      name: kube-prometheus-stack
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 14.*
+    description: A Helm chart for HiveMQ Swarm
+    digest: 724d17d15d7ffd487d15983cbf5ffccf105d339d0acc758b97854176a366e0ca
+    icon: https://www.hivemq.com/img/svg/icon-hivemq-swarm.svg
+    keywords:
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    name: hivemq-swarm
+    type: application
+    urls:
+    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-swarm-0.2.23/hivemq-swarm-0.2.23.tgz
+    version: 0.2.23
   - apiVersion: v2
     appVersion: 4.18.0
     created: "2023-08-25T12:38:19.504301024Z"
@@ -90,4 +176,4 @@ entries:
     urls:
     - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-swarm-0.2.22/hivemq-swarm-0.2.22.tgz
     version: 0.2.22
-generated: "2023-08-25T12:38:19.504314524Z"
+generated: "2023-09-07T12:18:16.353542226Z"
