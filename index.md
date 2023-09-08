@@ -5,6 +5,12 @@
 ```bash
 helm repo add test-hivemq https://hivemq.github.io/test-helm-charts/
 ```
+### In case the repository already exist, upgrade to the latest version
+
+```bash
+helm repo update test-hivemq
+```
+
 ## Install the HiveMQ Platform Operator
 This will install a Hivemq Platform Operator for a Kubernetes cluster
 ```
