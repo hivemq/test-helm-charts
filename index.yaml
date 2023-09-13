@@ -48,6 +48,27 @@ entries:
   hivemq-platform:
   - apiVersion: v2
     appVersion: 4.19.0
+    created: "2023-09-13T13:00:19.315871606Z"
+    description: Helm chart of a HiveMQ platform for the HiveMQ Operator
+    digest: 2b82f4ff15e87491cdf5d1faca9c0f5e671dd567a2826e4f654e916a3c9f8d31
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - HiveMQ Platform
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    maintainers:
+    - email: support@hivemq.com
+      name: HiveMQ
+    name: hivemq-platform
+    type: application
+    urls:
+    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-0.1.3/hivemq-platform-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 4.19.0
     created: "2023-09-08T14:01:03.785338662Z"
     description: Helm chart of a HiveMQ platform for the HiveMQ Operator
     digest: c1a5fc7e9c30de1ca45e46554d81c1477e4a66a9e4eebf5bff0a0c10b73b270e
@@ -110,6 +131,27 @@ entries:
     - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-0.1.0/hivemq-platform-0.1.0.tgz
     version: 0.1.0
   hivemq-platform-operator:
+  - apiVersion: v2
+    appVersion: 0.9.0
+    created: "2023-09-13T13:00:19.41887753Z"
+    description: Helm chart of the HiveMQ Platform Operator for HiveMQ Platforms
+    digest: f21aa54dde529de1062239f8e19b1a9a2e2af4c6a130cb98f0ca2fcd8936bc3f
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    - Operator
+    maintainers:
+    - email: support@hivemq.com
+      name: HiveMQ
+    name: hivemq-platform-operator
+    type: application
+    urls:
+    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-operator-0.1.2/hivemq-platform-operator-0.1.2.tgz
+    version: 0.1.2
   - apiVersion: v2
     appVersion: 0.9.0
     created: "2023-09-07T12:18:16.235576403Z"
@@ -197,4 +239,4 @@ entries:
     urls:
     - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-swarm-0.2.22/hivemq-swarm-0.2.22.tgz
     version: 0.2.22
-generated: "2023-09-08T14:01:03.991891163Z"
+generated: "2023-09-13T13:00:19.545116065Z"
