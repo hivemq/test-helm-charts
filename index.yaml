@@ -154,6 +154,27 @@ entries:
   hivemq-platform-operator:
   - apiVersion: v2
     appVersion: 0.9.0
+    created: "2023-09-14T13:14:14.83741295Z"
+    description: Helm chart of the HiveMQ Platform Operator for HiveMQ Platforms
+    digest: e008f9ca791f744d51f057ad39e7cd59c01436c1f9e690e65af78dc6e68e4ad6
+    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
+    keywords:
+    - MQTT
+    - IoT
+    - Java
+    - distributed
+    - messaging
+    - Operator
+    maintainers:
+    - email: support@hivemq.com
+      name: HiveMQ
+    name: hivemq-platform-operator
+    type: application
+    urls:
+    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-operator-0.1.3/hivemq-platform-operator-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 0.9.0
     created: "2023-09-13T13:00:19.41887753Z"
     description: Helm chart of the HiveMQ Platform Operator for HiveMQ Platforms
     digest: f21aa54dde529de1062239f8e19b1a9a2e2af4c6a130cb98f0ca2fcd8936bc3f
@@ -260,4 +281,4 @@ entries:
     urls:
     - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-swarm-0.2.22/hivemq-swarm-0.2.22.tgz
     version: 0.2.22
-generated: "2023-09-14T12:44:29.462394515Z"
+generated: "2023-09-14T13:14:14.976100857Z"
