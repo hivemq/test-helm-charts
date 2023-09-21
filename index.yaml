@@ -48,27 +48,6 @@ entries:
   hivemq-platform:
   - apiVersion: v2
     appVersion: 4.19.0
-    created: "2023-09-21T08:01:51.870495407Z"
-    description: HiveMQ Platform Helm Chart (new)
-    digest: 311767fd3504cbdd15df47c8fd55991a0d8ad44365c6f5c41bb53f816afbdca4
-    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
-    keywords:
-    - HiveMQ Platform
-    - MQTT
-    - IoT
-    - Java
-    - distributed
-    - messaging
-    maintainers:
-    - email: support@hivemq.com
-      name: HiveMQ
-    name: hivemq-platform
-    type: application
-    urls:
-    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-0.2.0/hivemq-platform-0.2.0.tgz
-    version: 0.2.0
-  - apiVersion: v2
-    appVersion: 4.19.0
     created: "2023-09-14T12:44:29.277701187Z"
     description: Helm chart of a HiveMQ platform for the HiveMQ Operator
     digest: 57e3cedbbd6e81c4e797d0a250018ef17d91042653ae98effa90aee143374c11
@@ -173,27 +152,6 @@ entries:
     - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-0.1.0/hivemq-platform-0.1.0.tgz
     version: 0.1.0
   hivemq-platform-operator:
-  - apiVersion: v2
-    appVersion: 1.0.0
-    created: "2023-09-21T08:01:51.984712615Z"
-    description: HiveMQ Platform Operator Helm Chart (new)
-    digest: 9a176a8dcb30ab58a3acf8b38d35e6b45b12762280520a7f87ac2e47442145f2
-    icon: https://www.hivemq.com/img/svg/hivemq-bee.svg
-    keywords:
-    - MQTT
-    - IoT
-    - Java
-    - distributed
-    - messaging
-    - Operator
-    maintainers:
-    - email: support@hivemq.com
-      name: HiveMQ
-    name: hivemq-platform-operator
-    type: application
-    urls:
-    - https://github.com/hivemq/test-helm-charts/releases/download/hivemq-platform-operator-0.2.0/hivemq-platform-operator-0.2.0.tgz
-    version: 0.2.0
   - apiVersion: v2
     appVersion: 0.9.0
     created: "2023-09-14T13:14:14.83741295Z"
